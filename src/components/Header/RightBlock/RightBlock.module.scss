@@ -1,0 +1,72 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.buttonUser {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	border: 1px solid #fe5f00;
+	background-color: #fff;
+	color: #fe5f00;
+	border-radius: 15px;
+	padding: 13px 21px;
+}
+
+.buttonCart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	border: 1px solid #fe5f00;
+	background-color: #fe5f00;
+	border-radius: 15px;
+	padding: 13px 21px;
+	color: #fff;
+	position: relative;
+}
+
+.line {
+	width: 1px;
+	height: 16px;
+	background: #ffffff40;
+}
+
+.content {
+	position: relative;
+	width: 25px;
+}
+
+.box,
+.arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	opacity: 1;
+}
+
+.arrow {
+	opacity: 0;
+	transform: translate(-50%, -50%) translateX(-10px);
+}
+
+.buttonCart:hover .box {
+	opacity: 0;
+	transform: translate(-50%, -50%) translateX(10px);
+}
+
+.buttonCart:hover .arrow {
+	opacity: 1;
+	transform: translate(-50%, -50%) translateX(3px);
+}
