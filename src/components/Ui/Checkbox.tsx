@@ -1,16 +1,18 @@
 import { ChangeEvent, FC } from 'react';
 
 type Props = {
+	name: string;
+	label: string;
 	checked: boolean;
 	onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-	label: string;
 };
 
-export const Checkbox: FC<Props> = ({ checked, onChange, label }) => {
+export const Checkbox: FC<Props> = ({ name, checked, onChange, label }) => {
 	const styles = {
 		label: {
 			display: 'flex' as const,
 			cursor: 'pointer' as const,
+			marginBottom: '10px',
 		},
 		checkbox: {
 			opacity: 0,
@@ -49,7 +51,7 @@ export const Checkbox: FC<Props> = ({ checked, onChange, label }) => {
 
 	return (
 		<label style={styles.label}>
-			<input style={styles.checkbox} type='checkbox' checked={checked} onChange={onChange} />
+			<input style={styles.checkbox} type='checkbox' name={name} checked={checked} onChange={onChange} />
 			<span style={styles.checkboxNew}>
 				<span style={styles.checkboxAfter}>✓</span>
 			</span>

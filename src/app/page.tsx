@@ -13,7 +13,7 @@ export default function Home() {
 
 			<CategoriesAndSort />
 
-			<Container style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '50px' }}>
+			<Container style={{ display: 'flex', justifyContent: 'space-between', gap: '50px' }}>
 				<FilterPanel />
 				<ProductList />
 			</Container>
