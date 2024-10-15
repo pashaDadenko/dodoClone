@@ -5,9 +5,7 @@ import { Title } from '@/components/Ui/Title';
 
 import styles from './PriceInput.module.scss';
 
-type Props = {};
-
-export const PriceInput: FC<Props> = ({}) => {
+export const PriceInput: FC = () => {
 	const [firstPrice, setFirstPrice] = useState(0);
 	const [secondPrice, setSecondPrice] = useState(100);
 
