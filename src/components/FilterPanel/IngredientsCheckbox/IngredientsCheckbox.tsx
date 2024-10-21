@@ -18,16 +18,14 @@ type Props = {
 
 export const IngredientsCheckbox: FC<Props> = ({ items, limit, defaultItems, defaultValue, onChange }) => {
 	return (
-		<div className={styles.wrapper}>
+		<>
 			<Title text='Ингредиенты:' fontSize='16px' marginBottom='15px' />
-
-			<input type='search' placeholder='Поиск' className={styles.searchInput} onChange={() => {}} />
-
+			<input className={styles.searchInput} type='search' placeholder='Поиск...' onChange={() => {}} />
 			<div>
 				{items?.map((item, index) => (
 					<Checkbox key={index} name={item.name} label={item.label} checked={item.checked} onChange={() => onChange} />
 				))}
 			</div>
-		</div>
+		</>
 	);
 };

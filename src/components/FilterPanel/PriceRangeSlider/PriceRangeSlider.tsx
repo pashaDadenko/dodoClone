@@ -17,6 +17,7 @@ export const PriceRangeSlider: FC = () => {
 	const handleSecondPriceChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setSecondPrice(+event.target.value);
 	};
+
 	return (
 		<>
 			<Title text='Цена от и до:' fontSize='16px' marginBottom='15px' />
@@ -30,7 +31,6 @@ export const PriceRangeSlider: FC = () => {
 					<span className={styles.currencySymbol}>₽</span>
 				</div>
 			</div>
-
 			<div className={styles.wrapper}>
 				<input className={styles.rangeInput} type='range' min={0} max={1000} value={firstPrice} onChange={handleFirstPriceChange} />
 				<input className={styles.rangeInput} type='range' min={100} max={1000} value={secondPrice} onChange={handleSecondPriceChange} />

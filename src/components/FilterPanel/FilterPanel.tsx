@@ -12,7 +12,6 @@ export const FilterPanel: FC = () => {
 			<Title text='Фильтрация' fontSize='22px' marginBottom='30px' />
 			<FilterCriteria />
 			<PriceRangeSlider />
-
 			{/* работаем с IngredientsCheckbox */}
 			<IngredientsCheckbox />
 		</div>
