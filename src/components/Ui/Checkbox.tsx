@@ -1,13 +1,13 @@
 import { ChangeEvent, FC } from 'react';
 
-type Props = {
+export type CheckboxProps = {
 	name: string;
 	label: string;
-	checked: boolean;
-	onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+	checked?: boolean;
+	onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const Checkbox: FC<Props> = ({ name, checked, onChange, label }) => {
+export const Checkbox: FC<CheckboxProps> = ({ name, checked, onChange, label }) => {
 	const styles = {
 		label: {
 			display: 'flex' as const,
