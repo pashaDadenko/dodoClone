@@ -1,0 +1,52 @@
+.wrapper {
+	max-width: 285px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.imageWrapper {
+	border-radius: 15px;
+	width: 285px;
+	height: 260px;
+	background-color: #fff7ee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ingredients {
+	font-weight: 400;
+	font-size: 14px;
+	color: #b1b1b1;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.price {
+	font-weight: 400;
+	font-size: 20px;
+	color: #000;
+}
+
+.priceValue {
+	font-weight: 700;
+}
+
+.button {
+	border-radius: 15px;
+	width: 125px;
+	height: 42px;
+	background-color: #fffaf4;
+	font-weight: 600;
+	font-size: 15px;
+	color: #fe5f00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}

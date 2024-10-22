@@ -7,13 +7,31 @@ import { IngredientsCheckbox } from './IngredientsCheckbox/IngredientsCheckbox';
 import styles from './FilterPanel.module.scss';
 
 export const FilterPanel: FC = () => {
+	const items = [
+		{ name: 'canGather', label: 'Можно собирать', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+		{ name: 'isNew', label: 'Новинки', checked: false },
+	];
+
 	return (
 		<div className={styles.wrapper}>
-			<Title text='Фильтрация' fontSize='22px' marginBottom='30px' />
+			<Title text='Фильтрация' fontSize='22px' margin=' 0 0 30px 0' />
 			<FilterCriteria />
 			<PriceRangeSlider />
-			{/* работаем с IngredientsCheckbox */}
-			<IngredientsCheckbox />
+			<IngredientsCheckbox items={items} />
 		</div>
 	);
 };

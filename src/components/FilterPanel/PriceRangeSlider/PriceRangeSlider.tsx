@@ -20,7 +20,7 @@ export const PriceRangeSlider: FC = () => {
 
 	return (
 		<>
-			<Title text='Цена от и до:' fontSize='16px' marginBottom='15px' />
+			<Title text='Цена от и до:' fontSize='16px' margin='0 0 15px 0' />
 			<div className={styles.wrapper}>
 				<div className={styles.container}>
 					<input className={styles.input} type='number' min={0} max={1000} value={firstPrice} onChange={() => {}} />
